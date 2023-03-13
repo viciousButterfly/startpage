@@ -1,6 +1,6 @@
 <script>
   window.onload=function(){
-      const form = document.querySelector('form');
+      const form = document.querySelector('.searchBar');
       form.addEventListener('submit', function(e) {
         e.preventDefault();
         const query = form.querySelector('input').value;
