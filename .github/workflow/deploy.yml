@@ -23,5 +23,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          base_branch: gh-pages
+          branch: main
           folder: public
