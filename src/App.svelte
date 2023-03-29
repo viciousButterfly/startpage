@@ -1,11 +1,16 @@
 <script>
 	import SearchBar from "./components/SearchBar.svelte";
+	import Footer from "./components/Footer.svelte";
+	let name = "Starpage";
+	let version = "0.0.1";
+
 </script>
 
 <main>
-	<h1>Startpage</h1>
+	<h1>{name}</h1>
 	<SearchBar />
 </main>
+<Footer {name} {version} />
 
 <style>
 	main {

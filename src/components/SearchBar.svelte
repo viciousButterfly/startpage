@@ -32,7 +32,7 @@
 
     .wrapper {
       width: 100%;
-      max-width: 31.25rem;
+      max-width: 35rem;
       margin: 6rem auto;
     }
 
@@ -57,7 +57,7 @@
       background: #f5f5f5;
       outline: none;
       border: none;
-      border-radius: 1.625rem;
+      border-radius: 1rem;
       padding: 0 3.5rem 0 1.5rem;
       font-size: 1rem;
       border:1px solid black
