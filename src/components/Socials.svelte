@@ -44,21 +44,6 @@
     margin-bottom: 10px;
   }
 
-  .social-media-favorite.twitter i {
-    color: #1DA1F2;
-  }
-
-  .social-media-favorite.facebook i {
-    color: #1877F2;
-  }
-
-  .social-media-favorite.instagram i {
-    color: #C13584;
-  }
-
-  .social-media-favorite.linkedin i {
-    color: #0077B5;
-  }
 </style>
 
 <div class="social-media-favorites">
