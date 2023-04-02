@@ -7,7 +7,7 @@
     const tabs = [
         { name: 'Home', icon: '🏠' },
         { name: 'Profile', icon: '👤' },
-        { name: 'Developer', icon: '💬' },
+        { name: 'Developer', icon: '💻' },
         { name: 'To-Do', icon: '📝' }
     ];
 
@@ -44,7 +44,7 @@
         height: 3rem;
         border-radius: 50%;
         border: none;
-        background-color: #eee;
+        background-color: #a0d2eb;
         color: #333;
         font-size: 1.5rem;
         cursor: pointer;

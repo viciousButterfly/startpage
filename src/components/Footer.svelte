@@ -4,7 +4,7 @@
 </script>
 
 <footer>
-<p>{name} v{version}</p>
+    <p>{name} @v{version}</p>
 </footer>
 
 <style>
