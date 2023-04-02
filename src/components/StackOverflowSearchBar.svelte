@@ -1,10 +1,11 @@
 <script>
-    window.onload=function(){
+
+    function redirect(){
         const form = document.querySelector('.stack-search-bar');
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            const query = form.querySelector('input').value;
-            window.location.href = `https://stackoverflow.com/search?q=${query}`;
+            const query = form.querySelector('#stack-search-query-input').value;
+            window.location = `https://stackoverflow.com/search?q=${query}}}`;
         });
     }
 </script>
@@ -16,7 +17,7 @@
         <div class="stack-label">Stack Overflow</div>
         <form class="stack-search-bar">
             <input id="stack-search-query-input" type="text" onfocus="this.value=''" name="stack-search-query-input" placeholder="Search" value="" />
-            <button id="stack-search-query-submit" name="stack-search-query-submit" type="">
+            <button id="stack-search-query-submit" name="stack-search-query-submit" type="" on:click={redirect}>
                 <svg style="width:24px; height:24px" viewBox="0 0 24 24">
                 <path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
                 </svg>
