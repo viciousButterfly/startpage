@@ -9,13 +9,17 @@
 
 <style>
     footer {
-        background-color: #36454F;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #007bff;
         padding: 1rem;
         text-align: center;
-    }
+    }   
 
     p {
         margin: 0;
-        color: #51BA8E;
+        color: #000000;
     }
 </style>
