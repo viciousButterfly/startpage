@@ -24,8 +24,8 @@
 		<StackOverflowSearchBar />
 	{:else if activeTab == 'To-Do'}
 		<ToDoList />
-	{:else if activeTab == 'Blogs'}
-		<Blogs />
+	<!-- {:else if activeTab == 'Blogs'}
+		<Blogs /> -->
 	{/if}
 </main>
 <Footer {name} {version} />

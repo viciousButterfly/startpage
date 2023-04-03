@@ -9,7 +9,7 @@
         { name: 'Profile', icon: '👤' },
         { name: 'Developer', icon: '💻' },
         { name: 'To-Do', icon: '📝' },
-        { name: 'Blogs', icon: '📰'},
+        // { name: 'Blogs', icon: '📰'},
     ];
 
     function selectTab(tab) {
