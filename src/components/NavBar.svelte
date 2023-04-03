@@ -8,7 +8,8 @@
         { name: 'Home', icon: '🏠' },
         { name: 'Profile', icon: '👤' },
         { name: 'Developer', icon: '💻' },
-        { name: 'To-Do', icon: '📝' }
+        { name: 'To-Do', icon: '📝' },
+        { name: 'Blogs', icon: '📰'},
     ];
 
     function selectTab(tab) {
