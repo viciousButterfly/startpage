@@ -1,5 +1,6 @@
 ## Todo
 - [ ] Show recently searched queries in Search Bar
+- [ ] Add Different Search Engines
 
 ## In Progress
 - [ ] Display Blogs 
