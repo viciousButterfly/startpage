@@ -8,7 +8,7 @@
   <a href="https://www.facebook.com/" class="fa fa-facebook"> </a>
   <a href="https://www.twitter.com" class="fa fa-twitter"> </a>
   <a href="https://www.instagram.com/" class="fa fa-instagram"> </a>
-  <a href="https://www.whatsapp.com/" class="fa fa-whatsapp"> </a>
+  <a href="https://web.whatsapp.com/" class="fa fa-whatsapp"> </a>
 </fa>
 
 <style>
