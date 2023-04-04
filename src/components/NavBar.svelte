@@ -18,7 +18,7 @@
     }
 
 </script>
-  
+
 <nav>
   {#each tabs as tab}
     <button

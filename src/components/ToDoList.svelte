@@ -82,6 +82,7 @@
     border-radius: 10px;
     background-color: var(--secondary-color);
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
   }
 
   .todo-input {

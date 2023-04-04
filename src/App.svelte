@@ -7,7 +7,8 @@
 	import NavBar from "./components/NavBar.svelte";
 	import ToDoList from "./components/ToDoList.svelte";
 	import Blogs from "./components/Blogs.svelte";
-	let name = "Startpage";
+	import Fact from "./components/Fact.svelte";
+	let name = "STARTPAGE";
 	let version = "0.0.1";
 	let activeTab = 'Home';
 	
@@ -22,6 +23,7 @@
 		<Socials />
 	{:else if activeTab == 'Developer'}
 		<StackOverflowSearchBar />
+		<Fact />
 	{:else if activeTab == 'To-Do'}
 		<ToDoList />
 	<!-- {:else if activeTab == 'Blogs'}

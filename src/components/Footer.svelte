@@ -4,11 +4,12 @@
 </script>
 
 <footer>
-    <p>{name} @v{version}</p>
+    <p>{name} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v{version}</p>
 </footer>
 
 <style>
     footer {
+        margin-top: 20px;
         position: fixed;
         bottom: 0;
         left: 0;
