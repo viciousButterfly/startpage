@@ -1,6 +1,7 @@
 ## Todo
 - [ ] Show recently searched queries in Search Bar
 - [ ] Add Different Search Engines
+- [ ] Implement Keyboard Shortcuts
 
 ## In Progress
 - [ ] Display Blogs 

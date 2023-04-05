@@ -9,6 +9,15 @@
         });
     }
 
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && event.key === 'b') {
+        console.log("Hello");
+        const input = document.getElementById('search-query-input');
+        input.setSelectionRange(0,0);
+        input.focus();
+    }
+});
+
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
