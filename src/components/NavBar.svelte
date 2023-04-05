@@ -17,6 +17,29 @@
         dispatch('tabSelected', activeTab);
     }
 
+    function dispatchKey(tabname){
+      dispatch('tabSelected', tabname);
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === '!') {
+        activeTab = 'Home';
+        dispatchKey('Home');
+      } 
+      if (event.key === '@') {
+        activeTab = 'Profile';
+        dispatchKey('Profile');
+      } 
+      if (event.key === '#') {
+        activeTab = 'Developer'
+        dispatchKey('Developer');
+      }
+      if (event.key === '$') {
+        activeTab = 'To-Do'
+        dispatchKey('To-Do');
+      }
+    });
+
 </script>
 
 <nav>

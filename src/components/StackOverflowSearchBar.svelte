@@ -8,6 +8,15 @@
             window.location = `https://stackoverflow.com/search?q=${query}}}`;
         });
     }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.ctrlKey && event.key === 'b') {
+          const input = document.getElementById('stack-search-query-input');
+          input.setSelectionRange(0,0);
+          input.focus();
+      }
+    });
+
 </script>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
