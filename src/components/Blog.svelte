@@ -1,13 +1,14 @@
 <script>
     export let imageUrl = '';
     export let title = '';
+    export let url = '';
 </script>
   
 <div class="blog">
     <img class="blog-image" src={imageUrl} alt={title} />
-    <h2 class="blog-title">{title}</h2>
+    <a href={url} class="blog-title">{title}</a>
 </div>
-  
+
 <style>
     .blog {
         flex: 1;
@@ -31,7 +32,7 @@
 
     .blog-image {
         width: 100%;
-        max-height: 400px;
+        max-height: 300px;
         object-fit: cover;
         border-radius: 1rem;
     }

@@ -9,7 +9,7 @@
         { name: 'Profile', icon: '👤' },
         { name: 'Developer', icon: '💻' },
         { name: 'To-Do', icon: '📝' },
-        // { name: 'Blogs', icon: '📰'},
+        { name: 'Blogs', icon: '📰'},
     ];
 
     function selectTab(tab) {
@@ -37,6 +37,10 @@
       if (event.key === '$') {
         activeTab = 'To-Do'
         dispatchKey('To-Do');
+      }
+      if (event.key === '%') {
+        activeTab = 'Blogs'
+        dispatchKey('Blogs');
       }
     });
 

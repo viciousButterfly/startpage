@@ -29,7 +29,8 @@
   }
 
   .fa:hover {
-    opacity: 0.7;
+    transform: scale(1.2);
+    transition-duration: 0.5s;
   }
 
   /* Github */
