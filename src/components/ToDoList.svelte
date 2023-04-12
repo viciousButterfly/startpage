@@ -1,56 +1,48 @@
 <script>
-    import { onMount } from 'svelte';
-    import { writable } from 'svelte/store';
+  import { tasks } from "../store/store.js";
 
-    let newTask = '';
-    const tasks = writable([]);
+  let newTask = "";
 
-    function addTask() {
-        tasks.update(oldTasks => [...oldTasks, { id: Date.now(), title: newTask, completed: false }]);
-        newTask = '';
-    }
+  function addTask() {
+    tasks.update((oldTasks) => [
+      ...oldTasks,
+      { id: Date.now(), title: newTask, completed: false },
+    ]);
+    newTask = "";
+  }
 
-    function deleteTask(id) {
-        tasks.update(oldTasks => oldTasks.filter(task => task.id !== id));
-    }
+  function deleteTask(id) {
+    tasks.update((oldTasks) => oldTasks.filter((task) => task.id !== id));
+  }
 
-    function toggleTask(id) {
-        tasks.update(oldTasks => oldTasks.map(task => {
+  function toggleTask(id) {
+    tasks.update((oldTasks) =>
+      oldTasks.map((task) => {
         if (task.id === id) {
-            task.completed = !task.completed;
+          task.completed = !task.completed;
         }
         return task;
-        }));
-    }
-
-    onMount(() => {
-        const storedTasks = JSON.parse(localStorage.getItem('tasks'));
-        if (storedTasks) {
-        tasks.set(storedTasks);
-        }
-    });
-
-    $: {
-        localStorage.setItem('tasks', JSON.stringify($tasks));
-    }
+      })
+    );
+  }
 </script>
-  
+
 <div class="todo-wrapper">
-    <div class="todo-input">
-        <input type="text" placeholder="Create a new todo" bind:value={newTask} />
-        <button on:click={addTask}>+</button>
-    </div>
-    <ul class="todo-list">
-        {#each $tasks as task (task.id)}
-        <li class="todo-item">
-            <label>
-            <input type="checkbox" />
-            <span>{task.title}</span>
-            </label>
-            <button on:click={() => deleteTask(task.id)}>-</button>
-        </li>
-        {/each}
-    </ul>
+  <div class="todo-input">
+    <input type="text" placeholder="Create a new todo" bind:value={newTask} />
+    <button on:click={addTask}>+</button>
+  </div>
+  <ul class="todo-list">
+    {#each $tasks as task}
+      <li class="todo-item">
+        <label>
+          <input type="checkbox" />
+          <span>{task.title}</span>
+        </label>
+        <button on:click={() => deleteTask(task.id)}>-</button>
+      </li>
+    {/each}
+  </ul>
 </div>
 
 <style>
@@ -67,9 +59,9 @@
     padding: 0;
   }
 
-  ::placeholder { 
+  ::placeholder {
     color: #343131;
-    opacity: 0.5; 
+    opacity: 0.5;
   }
 
   .todo-wrapper {
@@ -132,7 +124,6 @@
     width: 100%;
   }
 
-
   .todo-item {
     font-size: 1rem;
     text-align: center;
@@ -148,7 +139,7 @@
   }
 
   .todo-item input {
-    background-color: green;;
+    background-color: green;
   }
 
   .todo-item span {
