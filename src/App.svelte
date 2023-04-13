@@ -30,7 +30,7 @@
 		<Blogs />
 	{/if}
 </main>
-<Footer {name} {version} />
+<!-- <Footer {name} {version} /> -->
 
 <style>
 	main {
